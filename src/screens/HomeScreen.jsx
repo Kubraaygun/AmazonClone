@@ -5,6 +5,7 @@ import Categories from "../components/Categories";
 import Carousel from "../components/Carousel";
 import Services from "../components/Services";
 import Deals from "../components/Deals";
+import Brands from "../components/Brands";
 
 const HomeScreen = () => {
   return (
@@ -16,6 +17,7 @@ const HomeScreen = () => {
         <Carousel />
         <Services />
         <Deals />
+        <Brands />
       </ScrollView>
     </SafeAreaView>
   );
