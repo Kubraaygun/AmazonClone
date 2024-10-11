@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import SubHeader from "../components/SubHeader";
 import Categories from "../components/Categories";
 import Carousel from "../components/Carousel";
+import Services from "../components/Services";
 
 const HomeScreen = () => {
   return (
@@ -12,6 +13,7 @@ const HomeScreen = () => {
         <SubHeader />
         <Categories />
         <Carousel />
+        <Services />
       </ScrollView>
     </SafeAreaView>
   );
