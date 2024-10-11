@@ -1,6 +1,6 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, TextInput, View } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
-import { Ionicons } from "@expo/vector-icons";
+import { AntDesign, Feather, Ionicons } from "@expo/vector-icons";
 
 const Header = () => {
   return (
@@ -12,8 +12,19 @@ const Header = () => {
         colors={["#88dae0", "#98e1d6", "#9ee4d4"]}
       >
         <View style={styles.inputBox}>
-          <Ionicons name="search" size={22} color="#1f1f1f" />
+          <View style={styles.row}>
+            <Ionicons name="search" size={22} color="#1f1f1f" />
+            <TextInput
+              placeholder="Search Amazon"
+              placeholderTextColor={"#848484"}
+              style={styles.textInput}
+            />
+          </View>
+
+          <AntDesign name="scan1" size={22} color={"#909594"} />
         </View>
+
+        <Feather name="mic" size={22} color={"#000000"} />
       </LinearGradient>
     </View>
   );
@@ -22,6 +33,28 @@ const Header = () => {
 export default Header;
 
 const styles = StyleSheet.create({
-  container: {},
-  inputBox: {},
+  container: {
+    padding: 10,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+  inputBox: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#ffffff",
+    borderColor: "#a1bcc0",
+    borderWidth: 1,
+    width: "90%",
+    justifyContent: "space-between",
+    paddingHorizontal: 10,
+    borderRadius: 10,
+  },
+  row: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  textInput: {
+    padding: 8,
+  },
 });
