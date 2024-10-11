@@ -1,10 +1,14 @@
-import { SafeAreaView, StyleSheet, Text, View } from "react-native";
+import { SafeAreaView, ScrollView, StyleSheet, Text, View } from "react-native";
 import Header from "../components/Header";
+import SubHeader from "../components/SubHeader";
 
 const HomeScreen = () => {
   return (
     <SafeAreaView>
-      <Header />
+      <ScrollView>
+        <Header />
+        <SubHeader />
+      </ScrollView>
     </SafeAreaView>
   );
 };
