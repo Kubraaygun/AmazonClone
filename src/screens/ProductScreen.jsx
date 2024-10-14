@@ -27,25 +27,28 @@ const ProductScreen = () => {
             <View style={styles.productDetailSection}>
               <Text style={styles.sponsored}>Sponsored</Text>
               <Text style={styles.productName}>{item.productName}</Text>
+
+              <View style={styles.row}>
+                <Text style={styles.rating}>{item.rating}</Text>
+                <FontAwesome name="star" size={10} color={"#ffa41c"} />
+                <Text style={styles.ratingCount}>{item.ratingCount}</Text>
+              </View>
+
+              <View style={styles.row}>
+                <Text style={styles.price}>{item.price}</Text>
+                <Text style={styles.crossout}>{item.crossOutText}</Text>
+              </View>
+
+              <Text style={styles.cashback}>
+                {" "}
+                Up to 5% cashback with Amazon Pay Credit card
+              </Text>
+
+              <Image source={PrimeLogo} style={styles.logo} />
+              <Text style={styles.cashback}>
+                FREE Delivery by {item.deliveryBy}
+              </Text>
             </View>
-
-            <View style={styles.row}>
-              <Text style={styles.rating}>{item.rating}</Text>
-              <FontAwesome name="star" size={10} color={"#ffa41c"} />
-              <Text style={styles.ratingCount}>{item.ratingCount}</Text>
-            </View>
-
-            <View style={styles.row}>
-              <Text style={styles.price}>{item.price}</Text>
-              <Text style={styles.crossout}>{item.crossOutText}</Text>
-            </View>
-
-            <Text style={styles.cashback}>
-              {" "}
-              Up to 5% cashback with Amazon Pay Credit card
-            </Text>
-
-            <Image source={PrimeLogo} style={styles.logo} />
           </View>
         ))}
       </ScrollView>
@@ -56,19 +59,78 @@ const ProductScreen = () => {
 export default ProductScreen;
 
 const styles = StyleSheet.create({
-  container: {},
-  title: {},
-  tagline: {},
-  productSection: {},
-  productImgSection: {},
-  productImg: {},
-  productDetailSection: {},
-  sponsored: {},
-  productName: {},
-  row: {},
-  crossout: {},
-  price: {},
-  logo: {},
-  rating: {},
-  ratingCount: {},
+  container: {
+    padding: 10,
+  },
+  title: {
+    fontSize: 18,
+    fontWeight: "bold",
+    color: "#0000000",
+  },
+  tagline: {
+    fontSize: 11,
+    color: "gray",
+  },
+  productSection: {
+    borderWidth: 1,
+    borderColor: "#dddddd",
+    flexDirection: "row",
+    marginVertical: 15,
+  },
+  productImgSection: {
+    width: "40%",
+    backgroundColor: "#ddddddd",
+    justifyContent: "center",
+  },
+  productImg: {
+    width: "100%",
+    height: 150,
+    resizeMode: "contain",
+  },
+  productDetailSection: {
+    width: "60%",
+    padding: 10,
+  },
+  sponsored: {
+    fontSize: 10,
+    color: "#0000000",
+  },
+  productName: {
+    fontSize: 12,
+    color: "#000000",
+    lineHeight: 18,
+  },
+  row: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginTop: 5,
+  },
+  crossout: {
+    fontSize: 10,
+    color: "gray",
+    textDecorationLine: "line-through",
+  },
+  price: {
+    fontSize: 16,
+    color: "#000000",
+    marginRight: 5,
+  },
+  logo: {
+    height: 16,
+    width: 42,
+    marginVertical: 3,
+  },
+  rating: {
+    fontSize: 10,
+    color: "#017185",
+    marginRight: 5,
+  },
+  ratingCount: {
+    fontSize: 10,
+    color: "#017185",
+  },
+  cashback: {
+    fontSize: 9,
+    marginVertical: 3,
+  },
 });
