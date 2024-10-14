@@ -19,8 +19,8 @@ const ProductScreen = () => {
         <Text style={styles.tagline}>
           Price and other details may vary based on product aside and colour
         </Text>
-        {ProductData.map((item) => (
-          <View key={item.id} style={styles.productSection}>
+        {ProductData.map((item, index) => (
+          <View key={index} style={styles.productSection}>
             <View style={styles.productImgSection}>
               <Image source={item.image} style={styles.productImg} />
             </View>
