@@ -9,6 +9,7 @@ import {
 import { ProductData } from "../data/ProductData";
 import { FontAwesome } from "@expo/vector-icons";
 import PrimeLogo from "../assets/prime-logo.png";
+import { getRating } from "../utils/helpers";
 
 const ProductScreen = () => {
   return (
@@ -30,7 +31,7 @@ const ProductScreen = () => {
 
               <View style={styles.row}>
                 <Text style={styles.rating}>{item.rating}</Text>
-                <FontAwesome name="star" size={10} color={"#ffa41c"} />
+                {getRating(item.rating)}
                 <Text style={styles.ratingCount}>{item.ratingCount}</Text>
               </View>
 
