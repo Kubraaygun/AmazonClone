@@ -28,3 +28,7 @@ Bu proje, e-ticaret platformlarının temel çalışma mantığını anlamak ve 
 - react-native-swiper
 - expo
 - @expo/vector-icons
+
+## Ekran Görüntüsü
+
+![](../amazon.gif)
