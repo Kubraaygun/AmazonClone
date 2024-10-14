@@ -2,6 +2,10 @@
 
 Bu proje, temel bir Amazon e-ticaret klonudur. React Native ve Expo kullanarak mobil bir uygulama olarak geliştirilmiştir. Kullanıcılar, ürünlerin listelendiği bir ana sayfayı ve detay sayfasını görüntüleyebilir.
 
+## Proje Amacı
+
+Bu proje, e-ticaret platformlarının temel çalışma mantığını anlamak ve React Native ile mobil uygulama geliştirme becerilerini güçlendirmek amacıyla oluşturuldu.
+
 ## Özellikler
 
 - **Anasayfa** : Kullanıcılar, kategori, hizmetler ve ürünlerle ilgili bilgilere ulaşabilir.
