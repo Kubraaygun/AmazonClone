@@ -31,4 +31,4 @@ Bu proje, e-ticaret platformlarının temel çalışma mantığını anlamak ve 
 
 ## Ekran Görüntüsü
 
-![](../assets/amazon.gif)
+![](../amazon.gif)
