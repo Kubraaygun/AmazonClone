@@ -12,9 +12,15 @@ Bu proje, temel bir Amazon e-ticaret klonudur. React Native ve Expo kullanarak m
 ## Kullanılan Teknolojiler
 
 - **React Native** : Mobil uygulamanın ana geliştirme framework'ü.
-
 - **Expo** : Uygulamanın derlenmesi ve çalıştırılması için kullanılır.
 - **React Navigation** : Ekranlar arası geçişi sağlar.
 - **React Native Swiper** : Carousel komponenti için kullanılır.
-
 - **Expo Vector Icons** : Uygulamada ikonlar kullanmak için.
+
+## Kullanılan Paketler
+
+- @react-navigation/native
+- @react-navigation/native-stack
+- react-native-swiper
+- expo
+- @expo/vector-icons
